@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(44, 42, 42);
+    height: 75px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+.left_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.left_block img {
+    height: 50px;
+    width: 50px;
+    margin: 12px;
+}
+.left_block p{
+    font-size: 24px;
+    color: white;
+}
+.right_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+ul li{
+    margin: 21px;
+    font-size: 14px;
+}
+h3 {
+    margin: 35px 0px;
+    text-align: center;
+    font-size: 24px;
+}
+main {
+    margin: 0px 100px 0px 104px;
+}
+.company_about {
+    display: flex;
+    justify-content: space-between;
+    gap: 104px;
+}
+h4 {
+    font-size: 16px;
+    margin-top: 13px;
+    margin-bottom: 17px;
+}
+.company_description p {
+    font-size: 14px;
+}
+.instruction_steps h4 {
+    margin-top: 62px;
+    margin-bottom: 50px;
+}
+h2{ 
+    font-size: 36px;
+    margin-right: 15px;
+}
+.steps {
+    list-style: none;
+    display: flex;
+}
+.steps li {
+    display: flex;
+    justify-content: space-between;
+}
+.steps p {
+    font-size: 14px;
+}
+.grade_block {
+    display: flex;
+    justify-content: space-around;
+}
+.grade_block img {
+    height: 203px;
+    width: 279px;
+}
+.grade_block p {
+    margin: 61px 401px 133px 0px;
+}
