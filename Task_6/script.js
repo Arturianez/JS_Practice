@@ -186,6 +186,46 @@
 // console.log(filterArr(newArr,false));
 
 
+// Дан массив numArr, содержащий как числа, так и строки. 
+// Напишите функцию processNumbers, которая принимает массив numArr и булево значение double. 
+// Если double равно true, функция должна вернуть массив только из чисел, умноженных на 2. 
+// Если double равно false, 
+// функция должна вернуть массив только из чисел, увеличенных на 10.
+
+// const numArr = [7,8,9,"wood","some","Tom"]
+
+// function processNumbers(someArr,double) {
+//     if(double) {
+//         return someArr
+//             .filter((element) => typeof element === "number")
+//             .map((element) => element * 2)
+//     } else {
+//         return someArr
+//             .filter((element) => typeof element === "number")
+//             .map((element) => element + 10)
+//     }
+// }
+// console.log(processNumbers(numArr,false));
+
+// Дан массив wordsArr, содержащий строки. Напишите функцию processWords, 
+// которая принимает массив wordsArr и булево значение capitalize. 
+// Если capitalize равно true, функция должна вернуть массив слов, начинающихся с заглавной буквы. 
+// Если capitalize равно false, 
+// функция должна вернуть массив слов, начинающихся с заглавной буквы, но в обратном порядке.
+// charAt(0)
+// Данный метод применяется к строке чтобы опердеелить ее первый элемент (первая буква строки)
+// const wordsArr = ["Name","Age","city","Height","width"]
+// function processWords(someArr,capitalize) {
+//     if(capitalize) {
+//         return someArr
+//             .filter((element) => element.charAt(0) === element.charAt(0).toUpperCase())
+//     } else {
+//         return someArr
+//             .filter((element) => element.charAt(0) === element.charAt(0).toLowerCase())
+//             .map((element) => element.split('').reverse().join(''))
+//     }
+// }
+// console.log(processWords(wordsArr,false));
 
 
 
