@@ -120,6 +120,76 @@
 // console.log(checkСoincidence(nums));
 
 
+// Функция, возвращающая функцию:
+// Напишите функцию createMultiplier, которая принимает одно число multiplier и возвращает функцию, 
+// умножающую любое число на этот multiplier.
+// function createMultiplier(multiplier) {
+    
+//     return function (num){
+//         return  num * multiplier;
+//     };
+// }
+// const multiplyBy2 = createMultiplier(4)
+// console.log(multiplyBy2(13));
+// console.log(createMultiplier(2)(4));
+
+// Проверка возраста:
+// Напишите функцию checkAge, которая принимает возраст пользователя и возвращает строку:
+
+// "Младенец", если возраст меньше 1 года;
+// "Ребенок", если возраст от 1 до 12 лет;
+// "Подросток", если возраст от 13 до 17 лет;
+// "Взрослый", если возраст от 18 до 64 лет;
+// "Пожилой", если возраст 65 лет и старше.
+
+// function checkAge(age) {
+//     if(age < 1) {
+//         console.log("child(before 1 year)");
+//     } else if(age >= 1 && age <= 12) {
+//         console.log("children(between 1 - 12 years)");
+//     } else if(age >=13 && age <= 17) {
+//         console.log("teenager(between 13 - 17 years)");
+//     } else if(age >=18 && age <= 64) {
+//         console.log("adult(between 18 - 64 years)");
+//     } else {
+//         console.log("old(more than 64 years)");
+//     }
+// }
+// checkAge(65)
+// =========
+// const arr = [2,3]
+// const arrNew = [345,789,"one"]
+// const arrNew2 = ["one","two",3]
+// function filterArr(someArr) {
+//     return someArr.filter((element) => typeof element === "number")
+    
+// }
+// console.log(filterArr(arr));
+// console.log(filterArr(arrNew));
+
+// function filterStr(someArr) {
+//     return someArr.filter((element) => typeof element === "string")
+// }
+// console.log(filterStr(arrNew));
+// console.log(filterStr(arrNew2));
+// =============
+// const newArr = ["one",2,"three",4,"five"]
+// function filterArr(someArr,isWorking) {
+//     if(isWorking) {
+//         return someArr.filter((element) => typeof element === "string")
+//     } else {
+//         return someArr
+//         .filter((element) => typeof element === "string")
+//         .map((element) => element.split('').reverse().join(''))
+//     }
+// }
+// console.log(filterArr(newArr,false));
+
+
+
+
+
+
 
 
 
