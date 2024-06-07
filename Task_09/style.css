@@ -77,7 +77,6 @@ h1 {
 /* === PROJECT === */
 .project {
     width: 100%;
-    height: 500px;
     position: relative;
     background-color: white;
     border-radius: 40px;
@@ -96,22 +95,31 @@ h2 {
     font-weight: 500;
     max-width: 987px;
 }
-
 .project_list {
     padding-top: 70px;
     padding-left: 1162px;
 }
 .project_list ul li {
     padding-bottom: 100px;
+    font-size: 32px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.project_list ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 48px;
+    height: 48px;
+    background: url('./img/list_star.png') no-repeat center center / contain;
 }
 .project_list ul li img {
     padding-right: 30px;
 }
 .project_bottom {
     padding-top: 245px;
-}
-.project_list span {
-    font-size: 32px;
 }
 .box {
     display: flex;
@@ -121,22 +129,21 @@ h2 {
 .box li {
     border: 1px solid rgb(240, 237, 237);
     border-radius: 50px;
-    height: 430px;
     width: 580px;
+    padding: 48px;
 }
 .box li h2 {
     font-size: 150px;
-    padding: 48px 0px 130px 48px;
-    font-family: "Manrope";
+    font-weight: 500;
+    line-height: 165px;
+    margin-bottom: 130px;
     color: #2B2A2A;
 }
-.box li span {
+.box li h4 {
+    line-height: 37px;
     font-size: 32px;
-    font-family: "Manrope";
-    color: #2B2A2A;
     opacity: 0.5;
-    padding-left: 48px;
-    padding-bottom: 52px;
+    font-weight: 500;
 }
 
 
