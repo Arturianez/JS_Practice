@@ -15,10 +15,21 @@ ul {
 
 
 /* === HEADER === */
-header {
+.header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    background-color: transparent;
+    padding-bottom: 25px;
+    z-index: 4;
 }
+
+.header.active {
+    background-color: #333333;
+    box-shadow: 0 0 10px hsla(0,0%,0%,0.8);   
+}
+
 .header__content {
     display: flex;
     justify-content: space-between;
@@ -51,6 +62,9 @@ header {
 
 
 /* === INTRO === */
+.intro .container {
+    background-color: none;
+}
 .inrto__list {
     width: fit-content;
     margin: 0 auto;
@@ -148,8 +162,184 @@ h2 {
 
 
 /* === DIRECTION === */
+.direction .container {
+    background-color: #333333;
+}
+ .direction_LR {
+    padding-top: 180px;
+    padding-bottom: 204px;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+ }
+.direction_left {
+    font-size: 32px;
+    color: white;
+    width: 100%;
+    max-width: 580px;
+}
+h3{ 
+    font-size: 64px;
+    color: white;
+    padding-bottom: 90px;
+}
 
 
+
+/* === CASES === */
+.container p {
+    font-size: 32px;
+    color: rgba(157, 149, 255, 1);
+    padding-top: 80px;
+    padding-bottom: 32px;
+}
+.for_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_cases {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding: 19px 24px;
+    background-color: #333333;
+    margin: 80px 0px 0px 200px;
+    border-radius: 40px;
+}
+.items {
+    margin-top: 90px;
+}
+
+
+
+/* === CASES === */
+.trust .container h2 {
+    margin: 200px 0px 72px 0px;
+}
+.items_logo {
+    display: flex;
+    justify-content: space-between;
+}
+.items_logo li{
+    border: 1px solid rgb(240, 237, 237);
+    width: 100%;
+    text-align: center;
+    padding: 90px;
+}
+.items_logo li:nth-child(6) {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+
+/* === TRUST === */
+.team_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.teamForBtn .team_btn {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding: 19px 24px;
+    background-color: #333333;
+    border-radius: 40px;
+}
+.events {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.events p {
+    font-size: 18px;
+    opacity: 0.5;
+    color: #333333;
+}
+.events h4{
+    font-size: 28px;
+    font-weight: 600;
+    max-width: 580px;
+}
+
+
+/* === CALLBACK === */
+.callback_top {
+    margin-top: 200px;
+
+}
+.callback_question {
+    margin-top: 110px;
+}
+.callback_list {
+    display: flex;
+    gap: 450px;
+    align-items: center;
+
+}
+.callback_list li {
+    font-size: 24px;
+}
+.callback_input {
+    margin-top: 42px;
+    margin-bottom: 120px;
+}
+.input {
+    text-align: center;
+}
+.input_items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+input {
+    width: 580px;
+    height: 90px;
+    opacity: 0.5;
+    font-size: 24px;
+}
+
+
+
+
+/* === FOOTER === */
+footer {
+    background-color: #333333;
+    height: 120px;
+}
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(246,246,246);
+    padding-top: 60px;
+}
+.footer_left {
+    
+    padding-left: 60px;
+    font-size: 18px;
+}
+.footer_center_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+    font-size: 18px;
+}
+.footer_right {
+    padding-right: 60px;
+}
+.footer_right_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 37px;
+    font-size: 22px;
+    color: white;
+}
 
 
 
