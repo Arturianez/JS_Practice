@@ -87,32 +87,32 @@
 // Создайте форму с текстовым полем и кнопкой "Добавить". Пользователь может вводить элементы списка по одному, 
 // и после нажатия на кнопку новый элемент добавляется в массив, который передается в createList.
 
-const arrStr = ["one","two","three","four","five"]
-const input = document.getElementById('input')
-const btn = document.querySelector('.btn')
-const listOfArr = document.querySelector('.listOfArr')
+// const arrStr = ["one","two","three","four","five"]
+// const input = document.getElementById('input')
+// const btn = document.querySelector('.btn')
+// const listOfArr = document.querySelector('.listOfArr')
 
-btn.addEventListener('click', function() {
-    const newInput = input.value
-    console.log("Input value is: ",newInput);
-    var liElement = document.createElement('li')
-    var ulElement = document.createElement("ul")
-    liElement.textContent = newInput
-    ulElement.appendChild(liElement)
-    listOfArr.appendChild(ulElement)  
-})
+// btn.addEventListener('click', function() {
+//     const newInput = input.value
+//     console.log("Input value is: ",newInput);
+//     var liElement = document.createElement('li')
+//     var ulElement = document.createElement("ul")
+//     liElement.textContent = newInput
+//     ulElement.appendChild(liElement)
+//     listOfArr.appendChild(ulElement)  
+// })
 
-function createList(items) {
-    console.log(items);
-    var ulElement = document.createElement("ul")
-    items.forEach(item => {
-        var liElement = document.createElement('li')
-        liElement.textContent = item
-        ulElement.appendChild(liElement)
-    });
-    listOfArr.appendChild(ulElement)
-}
-createList(arrStr)
+// function createList(items) {
+//     console.log(items);
+//     var ulElement = document.createElement("ul")
+//     items.forEach(item => {
+//         var liElement = document.createElement('li')
+//         liElement.textContent = item
+//         ulElement.appendChild(liElement)
+//     });
+//     listOfArr.appendChild(ulElement)
+// }
+// createList(arrStr)
 
 
 // 6)Напишите функцию startCountdown(seconds), которая принимает количество секунд и 
@@ -120,10 +120,28 @@ createList(arrStr)
 // Создайте кнопку на странице, при нажатии на которую пользователь вводит количество секунд в prompt, 
 // и запускается обратный отсчет, который отображается на странице.
 
-// function startCountdown(seconds) {
+// const btn = document.querySelector('.btn')
+// const countdown = document.querySelector('.countdown')
 
+// btn.addEventListener('click', function() {
+//     let time = prompt("Please, print time what you", "seconds")
+//     startCountdown(parseInt(time))
+// })
+
+// function startCountdown(seconds) {
+//     let countdownInterval;
+
+//     countdownInterval = setInterval(function () {
+//         seconds--;
+//         countdown.textContent = seconds;
+
+//         if (seconds === 0) {
+//             clearInterval(countdownInterval)
+//             alert('Time is done')
+//         }
+//     }, 1000) // delay milliseconds(1000 = 1 sec)
 // }
-// startCountdown()
+
 
 // 7)Напишите функцию filterArray(arr, callback), которая принимает массив arr и функцию обратного вызова callback. 
 // Функция должна возвращать новый массив, содержащий только те элементы, для которых callback возвращает true.
@@ -131,19 +149,128 @@ createList(arrStr)
 // При нажатии на кнопку считывайте введенные числа, создавайте массив, передавайте его в filterArray с функцией обратного вызова, 
 // которая фильтрует четные числа, и отображайте результат на странице.
 
+// const input = document.getElementById('input')
+// const btn = document.querySelector('.btn')
+
+// btn.addEventListener('click', function() {
+//     let newInput = input.value.split(',').map(Number);
+//     console.log("Original array: ", newInput);
+//     filterArray(newInput)
+// })
+
+// function filterArray(arr, callback) {
+//     const newArr = arr.filter( (element) => {
+//         if( element % 2 === 0) {
+//             return element;
+//         }
+//     })
+//     console.log("Array with even numbers: ", newArr);
+// }
+
 
 // 8)Напишите функцию changeText(elementId, newText), которая принимает ID элемента и новый текст, 
 // и заменяет текст внутри элемента на странице.
 // Создайте несколько элементов с текстом на странице и кнопки "Изменить текст". 
 // При нажатии на кнопку введите новый текст в prompt, и измените текст соответствующего элемента с помощью changeText.
 
+// const firstStr = document.getElementById('1')
+// const secondStr = document.getElementById('2')
+// const thirdStr = document.getElementById('3')
+// const btn = document.querySelector('.btn')
+
+// btn.addEventListener('click', function(){
+//     const idInfo = prompt("Print id what need changed", "id(1 to 3)")
+//     const textChange = prompt("Print new text", "new text")
+//     console.log(idInfo);
+//     console.log(textChange);
+//     changeText(idInfo, textChange)
+// })
+
+// function changeText(elementId, newText) {
+//     if(elementId == 1) {
+//         firstStr.innerText = newText
+//     } else if(elementId == 2) {
+//         secondStr.innerText = newText
+//     } else {
+//         thirdStr.innerText = newText
+//     }
+// }
+
 
 // 9)Напишите функцию sortArray(arr), которая принимает массив чисел и возвращает его отсортированную копию.
 // Создайте текстовое поле и кнопку "Сортировать". При нажатии на кнопку считывайте введенные числа (через запятую), 
 // создавайте массив, сортируйте его с помощью sortArray, и отображайте отсортированный массив на странице.
 
+// const arrNumbers = [20,80,144,76,1099,11]
+// const btn = document.querySelector('.btn')
+// const textField = document.querySelector(".textField")
+
+// btn.addEventListener('click', function() {
+//     sortArray(arrNumbers);
+// })
+
+// function sortArray(arr) {
+//     const newArr =  arr.sort(function(a,b) {
+//         return a - b;
+//     })
+//     console.log(newArr);
+//     textField.innerText = newArr
+// }
 
 // 10)Напишите функцию toggleVisibility(elementId), которая принимает ID элемента и переключает его видимость 
 // (если элемент видим, скрывает его, если скрыт — показывает).
 // Создайте несколько элементов с текстом и кнопки "Показать/Скрыть". 
 // Каждая кнопка должна переключать видимость соответствующего элемента при нажатии.
+
+const first = document.getElementById('1')
+const second = document.getElementById('2')
+const third = document.getElementById('3')
+const show = document.querySelector('.btn')
+const hide = document.querySelector('.btn2')
+
+show.addEventListener('click', function() {
+    const elementId = prompt("Print id", "id(1-3)")
+    toggleVisibility(elementId, true)
+})
+
+hide.addEventListener('click', function() {
+    const elementId = prompt("Print id", "id(1-3)")
+    toggleVisibility(elementId, false)
+})
+
+
+function toggleVisibility(elementId,show) {
+    // if(elementId == 1 && first.classList.contains("active")) {
+    //     first.classList.remove("active")
+    // } else {
+    //     first.classList.add("active")
+    // }
+    switch (parseInt(elementId)) {
+        case 1:
+            if (show) {
+                first.classList.remove("active");
+            } else {
+                first.classList.add("active");
+            }
+            break;
+        case 2:
+            if (show) {
+                second.classList.remove("active");
+            } else {
+                second.classList.add("active");
+            }
+            break;
+        case 3:
+            if (show) {
+                third.classList.remove("active");
+            } else {
+                third.classList.add("active");
+            }
+            break;
+        default:
+            console.log("Invalid element ID");
+            break;
+    }
+}
+
+
