@@ -222,55 +222,55 @@
 // Создайте несколько элементов с текстом и кнопки "Показать/Скрыть". 
 // Каждая кнопка должна переключать видимость соответствующего элемента при нажатии.
 
-const first = document.getElementById('1')
-const second = document.getElementById('2')
-const third = document.getElementById('3')
-const show = document.querySelector('.btn')
-const hide = document.querySelector('.btn2')
+// const first = document.getElementById('1')
+// const second = document.getElementById('2')
+// const third = document.getElementById('3')
+// const show = document.querySelector('.btn')
+// const hide = document.querySelector('.btn2')
 
-show.addEventListener('click', function() {
-    const elementId = prompt("Print id", "id(1-3)")
-    toggleVisibility(elementId, true)
-})
+// show.addEventListener('click', function() {
+//     const elementId = prompt("Print id", "id(1-3)")
+//     toggleVisibility(elementId, true)
+// })
 
-hide.addEventListener('click', function() {
-    const elementId = prompt("Print id", "id(1-3)")
-    toggleVisibility(elementId, false)
-})
+// hide.addEventListener('click', function() {
+//     const elementId = prompt("Print id", "id(1-3)")
+//     toggleVisibility(elementId, false)
+// })
 
 
-function toggleVisibility(elementId,show) {
-    // if(elementId == 1 && first.classList.contains("active")) {
+// function toggleVisibility(elementId,show) {
+    
+//     switch (parseInt(elementId)) {
+//         case 1:
+//             if (show) {
+//                 first.classList.remove("active");
+//             } else {
+//                 first.classList.add("active");
+//             }
+//             break;
+//         case 2:
+//             if (show) {
+//                 second.classList.remove("active");
+//             } else {
+//                 second.classList.add("active");
+//             }
+//             break;
+//         case 3:
+//             if (show) {
+//                 third.classList.remove("active");
+//             } else {
+//                 third.classList.add("active");
+//             }
+//             break;
+//         default:
+//             console.log("Invalid element ID");
+//             break;
+//     }
+// }
+// ================================
+// if(elementId == 1 && first.classList.contains("active")) {
     //     first.classList.remove("active")
     // } else {
     //     first.classList.add("active")
     // }
-    switch (parseInt(elementId)) {
-        case 1:
-            if (show) {
-                first.classList.remove("active");
-            } else {
-                first.classList.add("active");
-            }
-            break;
-        case 2:
-            if (show) {
-                second.classList.remove("active");
-            } else {
-                second.classList.add("active");
-            }
-            break;
-        case 3:
-            if (show) {
-                third.classList.remove("active");
-            } else {
-                third.classList.add("active");
-            }
-            break;
-        default:
-            console.log("Invalid element ID");
-            break;
-    }
-}
-
-
