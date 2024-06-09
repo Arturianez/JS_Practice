@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* === TRACTOR === */
+.tractor {
+    position: relative;
+}
+.frame_tractor {
+    background-color: navy;
+    width: 183px;
+    height: 80px;
+    margin-top: 143px;
+    margin-left: 700px;
+    position: relative;
+}
+.pipe {
+    background-color: black;
+    width: 5px;
+    height: 33px;
+    position: absolute;
+    top: -25px;
+    left: 30%; 
+}
+.wheel1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(0, 255, 117, 1);
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+}
+.wheel2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgba(0, 109, 50, 1);
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+}
+
+
+
+/* === BOTTOM RINGS === */
+.rings {
+    position: relative;
+    width: 84px;
+    height: 81px;
+    background-color: grey;
+    border-radius: 50px;
+    margin-left: 225px;
+    margin-top: 10px;
+    z-index: 1;
+}
+.rings::after {
+    position: absolute;
+    content: '';
+    width: 84px;
+    height: 81px;
+    background-color: green;
+    border-radius: 50px;
+    top: 30px;
+    left: 50px;
+}
+.rings::before {
+    position: absolute;
+    content: '';
+    width: 84px;
+    height: 81px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50px;
+    top: -30px;
+    right: -90px;
+    z-index: 1;
+}
+
+
+
+/* === FRAME === */
+.frame {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: relative;
+}
+.frame::after {
+    position: absolute;
+    content: '';
+    border-radius: 50px;
+    width: 84px;
+    height: 81px;
+    background-color: red;
+    z-index: 1;
+    right: -35px;
+    bottom: -35px;
+}
+.circle {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: red;
+}
+
+.frame__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.frame__top-left .circle:last-child {
+    position: relative;
+}
+
+.frame__top-left .circle:last-child::after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: -13px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: none;
+    border: 1px solid black;
+}
+
+.frame__top-left .circle:last-child::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: -13px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: none;
+    border: 1px solid black;
+}
+
+.frame__top-right .circle {
+    position: relative;
+}
+
+.frame__top-right .circle::after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: -13px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: none;
+    border: 1px solid black;
+}
+
+.frame__top-right .circle::before {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: -13px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: green;
+    z-index: -1;
+}
+
+
+.frame__top-left {
+    display: flex;
+    gap: 18px;
+}
+
+.frame__middle {
+    margin: 29px 0 18px 0;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.under_lorem {
+    margin-top: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+.square {
+    background-color: red;
+    width: 117px;
+    height: 36px;
+    position: relative;
+}
+.under_lorem .square:first-child:after {
+    position: absolute;
+    content: '';
+    border-radius: 50px;
+    top: 25px;
+    left: -10px;
+    width: 25px;
+    height: 24px;
+    background-color: rgb(82, 82, 82);
+}
+
+.under_lorem .square:last-child:before {
+    position: absolute;
+    content: '';
+    border-radius: 50px;
+    right: -15px;
+    top: -15px;
+    width: 25px;
+    height: 24px;
+    background-color: transparent;
+    border: 2px solid black;
+}
+.footer {
+    margin: 41px 0px 33px 0px;
+    position: relative;
+    display: flex;
+    gap: 41px;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px
+}
+
+.footer:before {
+    position: absolute;
+    content: '';
+    background-color: red;
+    width: 85px;
+    height: 51px;
+    top: -20px;
+    right: 34%;
+    z-index: -1;
+}
