@@ -420,7 +420,7 @@ header {
 .email_window {
     height: 324px;
     width: 100%;
-    background-color: rgb(60, 92, 125);
+    background-color: rgb(5, 43, 82);
     border-radius: 10px;
     width: fit-content;
     margin: 125px auto;
@@ -428,13 +428,13 @@ header {
 .email_text h2 {
     font-size: 36px;
     color: rgb(242, 153, 74);
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding: 50px 150px 20px 150px;
 }
 .email_text p {
     font-size: 16px;
     color: rgb(149, 161, 187);
     text-align: center;
+    border-radius: 10px;
 }
 .email_send {
     display: flex;
@@ -449,7 +449,8 @@ header {
     height: 56px;
     background-color: blue;
     padding-top: 18px;
-    
+    text-align: left;
+    padding-left: 10px;
 }
 .email_btn {
     width: 128px;
