@@ -2,15 +2,7 @@ const container = document.querySelector(".container")
 const ulCat = document.querySelector(".ulCat")
 const btn = document.querySelector(".btn")
 
-
-function removeCat() {
-    while (ulCat.firstChild) {
-        ulCat.removeChild(ulCat.firstChild);
-    }
-    getCats()
-}
-
-btn.addEventListener("click", removeCat)
+btn.addEventListener("click", getCats)
 
 
 async function getCats() {
@@ -22,6 +14,7 @@ async function getCats() {
         console.log(cats);
 
             cats.forEach(element => {
+                ulCat.innerHTML = '';
                 const liCat = document.createElement("li")
                 const imgCat = document.createElement("img")
                 const idCat = document.createElement("div")
