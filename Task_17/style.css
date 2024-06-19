@@ -27,6 +27,7 @@ h2 {
 img {
     width: 500px;
     height: 333px;
+    object-fit: contain;
 }
 .description {
     background: rgba(33, 33, 33, 1);
