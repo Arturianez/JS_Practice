@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.t-shirt {
+    margin: 100px;
+    border: 1px solid black;
+    width: 233px;
+    position: relative;
+}
+/* Псевдоэлемент */
+.t-shirt::after {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background-color: red;
+    content: "";
+    border-radius: 50%;
+    bottom: -45px;
+    left: -45px;
+    z-index: -1;
+}
+/* Псевдоэлемент */
+.t-shirt:before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: -45px;
+    right: -45px;
+    background-color: red;
+    border-radius: 50%;
+}
+h3 {
+    text-align: center;
+    padding: 15px;
+}
+.square {
+    width: 159px;
+    padding: 50px;
+    margin: 30px;
+    background-color: aquamarine;
+}
+.text {
+    text-align: center;
+}
+.btn {
+    margin: 15px auto;
+    display: block;
+}
+.anotherSquare {
+    background-color: grey;
+    width: 250px;
+    height: 250px;
+    margin: 150px;
+    position: relative;
+}
+/* Псевдоэлемент */
+.anotherSquare::after {
+    content: "";
+    background-color: red;
+    width: 188px;
+    height: 142px;
+    position: absolute;
+    bottom: -45px;
+    right: -45px;
+}
+/* Наведение на элемент */
+.btn:hover { 
+    background-color: transparent;
+}
