@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+
+}
+header {
+  background-color: rgb(206, 9, 180);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.list_header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.list_header li{
+  color: white;
+}
+.posts {
+  margin: 0 auto;
+  text-align: center;
+}
+h2 {
+  margin: 15px;
+  text-align: center;
+}
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 5px;
+}
+img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+}
+.posts ul {
+  margin: 0 150px 0 150px;
+}
+.posts ul li{
+  border: 1px solid black;
+  margin: 5px;
+  position: relative;
+}
+.posts ul li::after{
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 25px;
+  height: 1px;
+  top: 0;
+  right: -12px;
+  transform: rotate(-50deg);
+}
+.posts ul li::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 25px;
+  height: 1px;
+  top: 0;
+  right: -12px;
+  transform: rotate(50deg);
+}
+p {
+  padding: 4px;
+  text-decoration: underline
+}
+.useState_block {
+  padding: 25px 150px 2px 150px;
+}
+.counter {
+  padding: 25px 150px 0px 150px;
+}
+.counter button{
+  margin: 2px;
+}
+.switch {
+  padding: 25px 150px 0px 150px;
+}
+.dayTime {
+  padding: 25px 150px 0px 150px;
+}
+.dataList {
+  padding: 25px 150px 0px 150px;
+}
